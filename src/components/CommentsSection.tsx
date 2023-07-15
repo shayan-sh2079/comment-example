@@ -67,7 +67,7 @@ const CommentsSection = () => {
             </Box>
             {commentsData.comments.length === 0 ?
                 (commentsData.status === Status.IDLE &&
-                    <Typography color={"warning"}>
+                    <Typography color={"warning.main"}>
                         There are no comments
                     </Typography>
                 )
@@ -90,7 +90,7 @@ const CommentsSection = () => {
                 </Box>
             }
             {commentsData.status === Status.LOADING && <CircularProgress/>}
-            {commentsData.status === Status.FAILED && <Typography color={"error"}>An error has been occurred</Typography>}
+            {commentsData.status === Status.FAILED && <Typography color={"error.main"}>An error has been occurred</Typography>}
         </Box>
     );
 }
