@@ -17,7 +17,7 @@ export interface CommentsState {
 
 const initialState: CommentsState = {
     comments: [],
-    status: Status.IDLE,
+    status: Status.LOADING,
     totalPages: undefined,
 };
 
